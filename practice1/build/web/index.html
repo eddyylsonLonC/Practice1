@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Operators</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <style>
+            body{
+                background: #65a7cbb3;
+            }
+            .form {
+                padding: 10px;
+                width: 400px;
+                height: 400px;
+                background: #1c0d6b66;
+                text-align: center;
+                box-shadow: 5px  5px 5px #000; 
+                border-radius: 10px 10px 10px 10px; 
+            }
+            
+            .form .form-op input{
+                width: 80%;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+          input:hover {
+                background: #1c0d6b66;
+                color: #fff;
+            }
+            
+            
+        </style>
+        <h1> Operations</h1>
+        <div class="form">
+            <form  method="POST"  class="form-op" action="viewOperations.jsp" >
+                <label for="name"> Nombre :</label>
+                <input type="text" name="name" class ="name" placeholder = "Nombre" required >
+                <label for="num1"> Number1 : </label>
+                <input type="number" name="num1" class ="num1" placeholder = "Number 1" required>
+                <label for="num2"> Number2 : </label>
+                <input type="number" name="num2" class ="num2" placeholder = "Number 2 " required >
+                <input class="btn-send" type="submit" value ="send" >
+                
+                
+            </form>
+            
+            
+        </div>
+    </body>
+</html>
